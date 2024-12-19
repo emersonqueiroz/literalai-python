@@ -334,7 +334,7 @@ class BaseLiteralClient:
         """
         Gets the current step from the context.
         """
-        active_steps = active_steps_var.get()
+        active_steps = active_steps_var.get() or []
         if active_steps and len(active_steps) > 0:
             return active_steps[-1]
         else:
