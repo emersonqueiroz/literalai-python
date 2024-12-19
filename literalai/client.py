@@ -356,7 +356,7 @@ class BaseLiteralClient:
         """
         Resets the context, forgetting active steps & setting current thread to None.
         """
-        active_steps_var.set([])
+        active_steps_var.set(None)
         active_thread_var.set(None)
         active_root_run_var.set(None)
 
